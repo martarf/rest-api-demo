@@ -43,9 +43,9 @@ Si todo va bien deberíamos poder cargar la página
 
 Y probar la api (GET,POST,PUT,DELETE):
 
-    PROD: http://antevenio.local/api/v1/countries
+    PROD: curl -i http://rest-api-demo.local/api/v1/countries
 
-    DEV: http://antevenio.local/api/v1/index_dev.php/countries
+    DEV: curl -i http://rest-api-demo.local/index_dev.php/api/v1/countries
 
     PROD: http://rest-api-demo.local/api/v1/countries/1
 
