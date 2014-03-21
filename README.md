@@ -20,6 +20,7 @@ Instalamos dependencias
 
 Configuramos el virtual host de apache
 
+```
 <VirtualHost *:80>
     ServerName rest-api-demo.local
     DocumentRoot /Users/atram/Sites/rest-api-demo/web
@@ -30,6 +31,7 @@ Configuramos el virtual host de apache
         Allow from All
     </Directory>
 </VirtualHost>
+```
 
 Añadimos el host en /etc/hosts
 
@@ -41,14 +43,17 @@ Si todo va bien deberíamos poder cargar la página
 
 Y probar la api (GET,POST,PUT,DELETE):
 
-PROD: http://antevenio.local/api/v1/countries
-DEV: http://antevenio.local/api/v1/index_dev.php/countries
+    PROD: http://antevenio.local/api/v1/countries
 
-PROD: http://rest-api-demo.local/api/v1/countries/1
-DEV: http://rest-api-demo.local/api/v1/index_dev.php/countries/1
+    DEV: http://antevenio.local/api/v1/index_dev.php/countries
+
+    PROD: http://rest-api-demo.local/api/v1/countries/1
+
+    DEV: http://rest-api-demo.local/api/v1/index_dev.php/countries/1
 
 Para probar los test
-phpunit -c app/ tests
+
+    phpunit -c app/ tests
 
 
 
